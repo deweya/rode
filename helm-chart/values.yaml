@@ -1,0 +1,18 @@
+grafeas:
+  container:
+    port: 8443
+  service:
+    port: 8443
+
+image:
+  repository: quay.io/adewey/rode
+  tag: "0.0.1"
+  pullPolicy: Always
+
+resources:
+  limits:
+    cpu: 1
+    memory: 500Mi
+  requests:
+    cpu: 500m
+    memory: 100Mi
