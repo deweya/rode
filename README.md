@@ -82,7 +82,7 @@ Enforcers are configured to ensure the specified attester referenced in the name
 The easiest way to install rode is via the helm chart:
 
 ```shell
-helm install rode helm-charts/rode --values helm-chart/ocp-values.yaml
+helm install rode helm-chart/rode --values helm-chart/ocp-values.yaml
 ```
 
 ## Elastic Container Registry
