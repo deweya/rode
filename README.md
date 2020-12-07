@@ -82,8 +82,7 @@ Enforcers are configured to ensure the specified attester referenced in the name
 The easiest way to install rode is via the helm chart:
 
 ```shell
-helm repo add liatrio https://harbor.toolchain.lead.prod.liatr.io/chartrepo/public
-helm upgrade -i rode liatrio/rode
+helm install rode helm-charts/rode --values helm-chart/ocp-values.yaml
 ```
 
 ## Elastic Container Registry
