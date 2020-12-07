@@ -1,11 +1,8 @@
 grafeas:
   container:
-    port: 8080
+    port: 8443
   service:
-    port: 8080
-  certificates:
-    enabled: false
-  endpoint: grafeas-server:8080
+    port: 443
 
 image:
   repository: quay.io/adewey/rode
