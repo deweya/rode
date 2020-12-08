@@ -16,3 +16,7 @@ resources:
   requests:
     cpu: 500m
     memory: 100Mi
+
+#extraEnv:
+#  - name: SSL_CERT_DIR
+#    value: /certificates
