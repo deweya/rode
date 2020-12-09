@@ -5,27 +5,15 @@ expose:
       core: harbor.apps-crc.testing
   tls:
     enabled: true
-    certSource: secret
-    secret:
-      secretName: harbor-tls
+    secretName: harbor-tls
 
 persistence:
   enabled: false
 
 harborAdminPassword: admin
 
-registry:
-  credentials:
-    username: "harbor_registry_user"
-    password: "harbor_registry_password"
-    htpasswd: "harbor_registry_user:$2y$10$9L4Tc0DJbFFMB6RdSCunrOpTHdwhid4ktBJmLD00bYgqkkGOvll3m"
-
 chartmuseum:
   enabled: false
-
-trivy:
-  insecure: true
-  skipUpdate: true
 
 notary:
   enabled: false
