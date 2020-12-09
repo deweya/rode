@@ -1,0 +1,11 @@
+apiVersion: rode.liatr.io/v1alpha1
+kind: ClusterEnforcer
+metadata:
+  name: default
+spec:
+  namespaces:
+  - adewey-test
+  matchStrategy: Include
+  attesters:
+  - namespace: rode
+    name: imagescan
